@@ -1,0 +1,39 @@
+﻿@{
+    Layout = "_Layout"; // Use the new layout for the home page
+}
+
+<h1 class="text-center">Welcome to Inventory</h1>
+<div class="row justify-content-center mt-4">
+    <div class="col-md-4 box">
+        <h3 class="text-center">Product Management</h3>
+        <p class="text-center">Manage your products efficiently.</p>
+        <div class="text-center">
+            <a asp-controller="Product" asp-action="Index" class="btn btn-primary">Go to Products</a>
+        </div>
+    </div>
+
+    <div class="col-md-4 box">
+        <h3 class="text-center">Category Management</h3>
+        <p class="text-center">Manage your categories efficiently.</p>
+        <div class="text-center">
+            <a asp-controller="Category" asp-action="Index" class="btn btn-primary">Go to Categories</a>
+        </div>
+    </div>
+    @* Uncomment to include more boxes *@
+    @*
+    <div class="col-md-4 box">
+    <h3 class="text-center">Orders</h3>
+    <p class="text-center">Track your orders seamlessly.</p>
+    <div class="text-center">
+    <a asp-controller="Order" asp-action="Index" class="btn btn-primary">View Orders</a>
+    </div>
+    </div>
+    <div class="col-md-4 box">
+    <h3 class="text-center">Reports</h3>
+    <p class="text-center">Generate insightful reports.</p>
+    <div class="text-center">
+    <a asp-controller="Report" asp-action="Index" class="btn btn-primary">View Reports</a>
+    </div>
+    </div>
+    *@
+</div>

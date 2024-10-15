@@ -1,0 +1,64 @@
+﻿@using Inventory_Entities
+@model Product
+
+@{
+    ViewData["Title"] = "Edit Product";
+}
+
+<div class="container mt-4">
+    <h1>@ViewData["Title"]</h1>
+
+    <form asp-action="Edit" method="post" enctype="multipart/form-data">
+        <input type="hidden" asp-for="Id" />
+
+        <div class="mb-3">
+            <label asp-for="productName" class="form-label">Product Name</label>
+            <input asp-for="productName" class="form-control" required />
+            <span asp-validation-for="productName" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="productDescription" class="form-label">Product Description</label>
+            <input asp-for="productDescription" class="form-control" required />
+            <span asp-validation-for="productDescription" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="productPrice" class="form-label">Product Price</label>
+            <input asp-for="productPrice" class="form-control" type="number" step="1" required />
+            <span asp-validation-for="productPrice" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="categoryId" class="form-label">Category</label>
+            <select asp-for="categoryId" class="form-control" asp-items="@ViewBag.categoryList"></select>
+            <span asp-validation-for="categoryId" class="text-danger"></span>
+        </div>
+
+        <div>
+            <input type="file" asp-for="clientFile" onchange="loadFile(event)" />
+            <img id="myImg" height="200px" />
+        </div>
+
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary">Save Changes</button>
+            <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        <script>
+            var loadFile = function (event) {
+                var reader = new FileReader();
+                reader.onload = function () {
+                    var myImg = document.getElementById('myImg');
+                    myImg.src = reader.result;
+                }
+                reader.readAsDataURL(event.target.files[0]);
+            }
+        </script>
+    }
+}

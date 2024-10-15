@@ -1,0 +1,11 @@
+﻿@model Inventory_Entities.Category
+
+@{
+    ViewData["Title"] = "Category Details";
+}
+
+<div class="container mt-4">
+    <h1>@Model.categoryName</h1>
+
+    <a asp-controller="Category" asp-action="Index" class="btn btn-primary">Back to List</a>
+</div>

@@ -1,0 +1,19 @@
+﻿@model Inventory_Entities.Product
+
+@{
+    ViewData["Title"] = "Product Details";
+}
+
+<div class="container mt-4">
+    <h1>@Model.productName</h1>
+    <p><strong>Price:</strong> @Model.productPrice.ToString("C")</p>
+    <p><strong>Description:</strong> @Model.productDescription</p>
+    <p><strong>Category:</strong> @Model.category?.categoryName</p>
+    <p>
+        Image:
+        <br />
+        <img src="@Model.imageSrc" style="width:300px" class="img-thumbnail" />
+    </p>
+    <p><strong>Creation Date:</strong> @Model.CreationDate</p>
+    <a asp-controller="Product" asp-action="Index" class="btn btn-primary">Back to List</a>
+</div>
