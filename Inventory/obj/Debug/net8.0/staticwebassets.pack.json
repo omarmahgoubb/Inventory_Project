@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Inventory.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\omara\\Desktop\\Inventory_Project\\Inventory\\wwwroot\\No_Image_Available.jpg",
+      "PackagePath": "staticwebassets\\No_Image_Available.jpg"
+    },
+    {
       "Id": "C:\\Users\\omara\\Desktop\\Inventory_Project\\Inventory\\wwwroot\\css\\bootswatchStyle.css",
       "PackagePath": "staticwebassets\\css\\bootswatchStyle.css"
     },

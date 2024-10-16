@@ -2,22 +2,38 @@
 
 @{
     ViewData["Title"] = "Product Details";
+    // Default image path
+    var defaultImageSrc = Url.Content("~/No_Image_Available.jpg");
+    // Use default image if none is available
+    var imageSrc = string.IsNullOrEmpty(@Model.imageSrc) ? defaultImageSrc : @Model.imageSrc;
 }
 
 <div class="container mt-4">
-    <h1>@Model.productName</h1>
-    <p><strong>Price:</strong> @Model.productPrice.ToString("C")</p>
-    <p><strong>Description:</strong> @Model.productDescription</p>
-    <p><strong>Category:</strong> @Model.category?.categoryName</p>
-    <p><strong>Inventory:</strong> @Model.inventory?.InventoryName</p> <!-- Display the inventory name -->
-    <p><strong>Created By:</strong> @Model.CreatedBy</p>
-    <p>
-        <strong>Image:</strong>
-        <br />
-        <img src="@Model.imageSrc" style="width:300px" class="img-thumbnail" />
-    </p>
+    <h1 class="noHoverBox mb-4">@Model.productName</h1>
 
-    <p><strong>Creation Date:</strong> @Model.CreationDate</p>
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <img src="@imageSrc" style="width: 100%; max-width: 500px;" class="img-thumbnail" alt="@Model.productName" />
+        </div>
+        <div class="col-md-6">
+            <h3 class="mb-3" style="font-size: 2.2rem; text-decoration: underline;">Product Attributes:</h3>
+            <ul style="font-size: 1.5rem;">
+                <li><strong>Price:</strong> @Model.productPrice.ToString("C")</li>
+                <br />
+                <li><strong>Description:</strong> @(Model.productDescription ?? "No description available")</li>
+                <br />
+                <li><strong>Category:</strong> @(Model.category?.categoryName ?? "No category available")</li>
+                <br />
+                <li><strong>Inventory:</strong> @(Model.inventory?.InventoryName ?? "No inventory available")</li> <!-- Display the inventory name -->
+                <br />
+                <li><strong>Created By:</strong> @(Model.CreatedBy ?? "No creator information available")</li>
+                <br />
+                <li><strong>Creation Date:</strong> @Model.CreationDate</li> <!-- Format date -->
+            </ul>
+        </div>
+    </div>
 
-    <a asp-controller="Product" asp-action="Index" class="btn btn-primary">Back to List</a>
+    <div class="text-center mt-4">
+        <a asp-controller="Product" asp-action="Index" class="btn btn-primary">Back to List</a>
+    </div>
 </div>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4quT3S9BmqOCh4i7O8IjSIX7vLcLsKBi3S1JOYoai98=",
+  "Hash": "IJh2nHtPYHJgnnwAsLV5ZFJqAfNL7gZ/eTZLIb09Lis=",
   "Source": "Inventory",
   "BasePath": "_content/Inventory",
   "Mode": "Default",
@@ -2352,6 +2352,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\omara\\Desktop\\Inventory_Project\\Inventory\\wwwroot\\No_Image_Available.jpg",
+      "SourceId": "Inventory",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\omara\\Desktop\\Inventory_Project\\Inventory\\wwwroot\\",
+      "BasePath": "_content/Inventory",
+      "RelativePath": "No_Image_Available.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\No_Image_Available.jpg"
     }
   ]
 }

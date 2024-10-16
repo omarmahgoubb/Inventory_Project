@@ -1,5 +1,6 @@
 ﻿@using Inventory_Entities
 @model Product
+
 @{
     ViewData["Title"] = "Create New Product";
 }
@@ -29,11 +30,12 @@
             <label asp-for="inventoryId" class="form-label">Inventory</label>
             <select asp-for="inventoryId" class="form-control" asp-items="@ViewBag.inventoryList" required></select>
         </div>
-
-        <div>
-            <input type="file" asp-for="clientFile" onchange="loadFile(event)" />
-            <img id="myImg" height="50px" />
+        <div class="mb-3">
+            <label class="form-label">Product Image</label>
+            <input type="file" asp-for="clientFile" class="form-control" onchange="loadFile(event)" />
+            <img id="myImg" style="display:none; margin-top: 10px; max-height: 200px; max-width: 200px;" class="img-thumbnail" />
         </div>
+
 
         <div asp-validation-summary="All" class="text-danger"></div>
         <div class="mb-3">
@@ -52,8 +54,9 @@
             reader.onload = function () {
                 var myImg = document.getElementById('myImg');
                 myImg.src = reader.result;
+                myImg.style.display = 'block'; // Show the image once it's loaded
             }
             reader.readAsDataURL(event.target.files[0]);
-        }
+            }
     </script>
 }
