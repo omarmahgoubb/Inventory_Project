@@ -1,0 +1,44 @@
+﻿@model Inventory_Entities.Inventory
+@{
+    ViewData["Title"] = "Create New Inventory";
+}
+
+<div class="container mt-4">
+    <h1>@ViewData["Title"]</h1>
+
+    <form asp-action="Create" method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label asp-for="InventoryName" class="form-label">Inventory Name</label>
+            <input asp-for="InventoryName" class="form-control" required />
+            <span asp-validation-for="InventoryName" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="address" class="form-label">Inventory Address</label>
+            <input asp-for="address" class="form-control" required />
+            <span asp-validation-for="address" class="text-danger"></span>
+        </div>
+
+
+        <div asp-validation-summary="All" class="text-danger"></div>
+
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary">Create</button>
+            <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        var loadFile = function (event) {
+            var reader = new FileReader();
+            reader.onload = function () {
+                var myImg = document.getElementById('myImg');
+                myImg.src = reader.result;
+            }
+            reader.readAsDataURL(event.target.files[0]);
+        }
+    </script>
+}

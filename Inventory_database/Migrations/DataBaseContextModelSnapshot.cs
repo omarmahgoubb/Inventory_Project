@@ -53,12 +53,16 @@ namespace Inventory_database.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
 
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("InventoryName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("productQuantity")
-                        .HasColumnType("int");
+                    b.Property<string>("address")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("id");
 
@@ -88,6 +92,9 @@ namespace Inventory_database.Migrations
                     b.Property<string>("imagePath")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("inventoryId")
+                        .HasColumnType("int");
+
                     b.Property<string>("productDescription")
                         .HasColumnType("nvarchar(max)");
 
@@ -101,6 +108,8 @@ namespace Inventory_database.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("categoryId");
+
+                    b.HasIndex("inventoryId");
 
                     b.ToTable("Products");
                 });
@@ -155,29 +164,29 @@ namespace Inventory_database.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "e583135a-62a8-4aa2-b41a-49d683863a25",
-                            ConcurrencyStamp = "a94163c7-4267-4d11-9271-bcdd47b75aee",
+                            Id = "58191532-9e3b-4165-988a-6719cdc1efe9",
+                            ConcurrencyStamp = "22e9965d-4363-475f-898f-254e37ea8301",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "0a8cc881-4785-4af5-8d1c-f865e0c7f7df",
-                            ConcurrencyStamp = "7efec024-0e88-4ee7-a63d-745eca58caca",
+                            Id = "18e4e168-1cf5-4869-ade1-c5ce56ef9182",
+                            ConcurrencyStamp = "5cbdf0f5-39a1-4b0f-889f-46e3aa868a01",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = "01775f68-2048-4ed0-8573-4479ca8a1c51",
-                            ConcurrencyStamp = "3feb9127-66c4-4c89-91ff-50b4650ab5e3",
+                            Id = "70771752-54f0-4220-aa06-8e21dd6c4837",
+                            ConcurrencyStamp = "533b5708-7cc7-4b59-8db8-578a7b4eedec",
                             Name = "Viewer",
                             NormalizedName = "viewer"
                         },
                         new
                         {
-                            Id = "d5e1c852-c7e6-4c69-8be7-6a34fe6be555",
-                            ConcurrencyStamp = "1abab337-5af5-44ef-9fb2-67abc048ff7e",
+                            Id = "96dc0baf-edaa-4d4b-880f-8a37f166b74b",
+                            ConcurrencyStamp = "d824034d-6e85-4166-8562-40d3c6ee1a05",
                             Name = "Supplier",
                             NormalizedName = "supplier"
                         });
@@ -364,7 +373,13 @@ namespace Inventory_database.Migrations
                         .WithMany("products")
                         .HasForeignKey("categoryId");
 
+                    b.HasOne("Inventory_Entities.Inventory", "inventory")
+                        .WithMany("products")
+                        .HasForeignKey("inventoryId");
+
                     b.Navigation("category");
+
+                    b.Navigation("inventory");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -419,6 +434,11 @@ namespace Inventory_database.Migrations
                 });
 
             modelBuilder.Entity("Inventory_Entities.Category", b =>
+                {
+                    b.Navigation("products");
+                });
+
+            modelBuilder.Entity("Inventory_Entities.Inventory", b =>
                 {
                     b.Navigation("products");
                 });

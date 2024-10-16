@@ -55,5 +55,11 @@ namespace Inventory_Entities
         // New field to store the email of the user who created the product
         [DisplayName("Created By")]
         public string? CreatedBy { get; set; }
+
+        [DisplayName("Inventory")]
+        [ForeignKey("Inventory")]
+        public int? inventoryId { get; set; }
+
+        public Inventory? inventory { get; set; }
     }
 }

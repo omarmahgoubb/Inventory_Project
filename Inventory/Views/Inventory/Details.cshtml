@@ -1,0 +1,13 @@
+﻿@model Inventory_Entities.Inventory
+
+@{
+    ViewData["Title"] = "Inventory Details";
+}
+
+<div class="container mt-4">
+    <h1>@Model.InventoryName</h1>
+    <h3><strong>Inventory Address:</strong> @Model.address</h3>
+    <h3><strong>Created By:</strong> @Model.CreatedBy</h3>
+
+    <a asp-controller="Inventory" asp-action="Index" class="btn btn-primary">Back to List</a>
+</div>
