@@ -30,6 +30,9 @@ namespace Inventory_database.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("categoryName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -69,6 +72,9 @@ namespace Inventory_database.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("CreationDate")
                         .HasColumnType("datetime2");
@@ -149,24 +155,31 @@ namespace Inventory_database.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "6c803dac-ab8a-43a5-a74e-e15b803efdce",
-                            ConcurrencyStamp = "a8af44ac-ea93-4631-b717-77e8fc18710d",
+                            Id = "e583135a-62a8-4aa2-b41a-49d683863a25",
+                            ConcurrencyStamp = "a94163c7-4267-4d11-9271-bcdd47b75aee",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "f3e27649-4e61-4cb8-85da-a5ca1334a436",
-                            ConcurrencyStamp = "906554f1-d783-4201-8534-f3fab8be7db5",
+                            Id = "0a8cc881-4785-4af5-8d1c-f865e0c7f7df",
+                            ConcurrencyStamp = "7efec024-0e88-4ee7-a63d-745eca58caca",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = "fdfebf66-14aa-484e-af40-ba7201460558",
-                            ConcurrencyStamp = "e1cbaeea-fa33-44a2-b81e-3f0bdb031c35",
+                            Id = "01775f68-2048-4ed0-8573-4479ca8a1c51",
+                            ConcurrencyStamp = "3feb9127-66c4-4c89-91ff-50b4650ab5e3",
                             Name = "Viewer",
                             NormalizedName = "viewer"
+                        },
+                        new
+                        {
+                            Id = "d5e1c852-c7e6-4c69-8be7-6a34fe6be555",
+                            ConcurrencyStamp = "1abab337-5af5-44ef-9fb2-67abc048ff7e",
+                            Name = "Supplier",
+                            NormalizedName = "supplier"
                         });
                 });
 

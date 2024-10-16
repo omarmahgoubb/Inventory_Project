@@ -46,7 +46,14 @@ namespace Data_base
                      Name = "Viewer",
                      NormalizedName = "viewer",
                      ConcurrencyStamp = Guid.NewGuid().ToString(),
-                 }
+                 },
+                   new IdentityRole
+                   {
+                       Id = Guid.NewGuid().ToString(),
+                       Name = "Supplier",
+                       NormalizedName = "supplier",
+                       ConcurrencyStamp = Guid.NewGuid().ToString(),
+                   }
             );
         }
     }

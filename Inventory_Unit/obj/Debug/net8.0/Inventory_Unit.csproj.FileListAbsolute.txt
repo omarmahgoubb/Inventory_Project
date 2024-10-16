@@ -17,3 +17,4 @@ C:\Users\omara\Desktop\Inventory_Project\Inventory_Unit\obj\Debug\net8.0\Invento
 C:\Users\omara\Desktop\Inventory_Project\Inventory_Unit\obj\Debug\net8.0\refint\Inventory_Unit.dll
 C:\Users\omara\Desktop\Inventory_Project\Inventory_Unit\obj\Debug\net8.0\Inventory_Unit.pdb
 C:\Users\omara\Desktop\Inventory_Project\Inventory_Unit\obj\Debug\net8.0\ref\Inventory_Unit.dll
+C:\Users\omara\Desktop\Inventory_Project\Inventory_Unit\obj\Debug\net8.0\Inventory_Unit.sourcelink.json

@@ -3,13 +3,13 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-
 namespace Inventory_Entities
 {
     public class Product
     {
         [Key]
         public int Id { get; set; }
+
         [DisplayName("Product Name")]
         public string productName { get; set; }
 
@@ -18,10 +18,10 @@ namespace Inventory_Entities
 
         [DisplayName("Product Price")]
         [Range(1, 10000, ErrorMessage = "price must be greater than 0")]
-
         public float productPrice { get; set; }
 
         public DateTime? CreationDate { get; set; } = DateTime.Now;
+
         [DisplayName("Category")]
         [ForeignKey("Category")]
         public int? categoryId { get; set; }
@@ -51,5 +51,9 @@ namespace Inventory_Entities
                 }
             }
         }
+
+        // New field to store the email of the user who created the product
+        [DisplayName("Created By")]
+        public string? CreatedBy { get; set; }
     }
 }

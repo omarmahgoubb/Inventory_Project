@@ -15,3 +15,4 @@ C:\Users\omara\Desktop\Inventory_Project\Inventory_Repositories\obj\Debug\net8.0
 C:\Users\omara\Desktop\Inventory_Project\Inventory_Repositories\obj\Debug\net8.0\refint\Inventory_Repositories.dll
 C:\Users\omara\Desktop\Inventory_Project\Inventory_Repositories\obj\Debug\net8.0\Inventory_Repositories.pdb
 C:\Users\omara\Desktop\Inventory_Project\Inventory_Repositories\obj\Debug\net8.0\ref\Inventory_Repositories.dll
+C:\Users\omara\Desktop\Inventory_Project\Inventory_Repositories\obj\Debug\net8.0\Inventory_Repositories.sourcelink.json

@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@using Inventory_Entities
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> signInManager
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -8,6 +11,7 @@
     <link rel="stylesheet" href="~/css/bootswatchStyle.css" asp-append-version="true" /> <!-- Added Bootswatch CSS here -->
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Inventory.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"  />
 
     <style>
         .box {
@@ -44,22 +48,24 @@
                     <ul class="navbar-nav flex-grow-1">
 
 
-                        @*  @if (SignInManager.IsSignedIn(User))
-                        { *@
+                          @if (signInManager.IsSignedIn(User))
+                        { 
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                             </li>
-                        @*                         }
- *@                        <li class="nav-item">
+                            
+                                                <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Product" asp-action="Index">Products</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Category" asp-action="Index">Categories</a>
                         </li>
-                        <li class="nav-item">
+                        @if (User.IsInRole(RolesNames.roleAdmin))
+                          {<li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Roles" asp-action="Index">User Roles</a>
                         </li>
-
+                          }
+                        }
 
                     </ul>
 
@@ -79,10 +85,13 @@
             &copy; 2024 - Inventory_Self - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
+    @await Html.PartialAsync("_Notifications")
+
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+
 </body>
 </html>

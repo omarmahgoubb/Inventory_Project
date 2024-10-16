@@ -12,3 +12,4 @@ C:\Users\omara\Desktop\Inventory_Project\Inventory_Entities\obj\Debug\net8.0\ref
 C:\Users\omara\Desktop\Inventory_Project\Inventory_Entities\obj\Debug\net8.0\Inventory_Entities.pdb
 C:\Users\omara\Desktop\Inventory_Project\Inventory_Entities\obj\Debug\net8.0\Inventory_Entities.genruntimeconfig.cache
 C:\Users\omara\Desktop\Inventory_Project\Inventory_Entities\obj\Debug\net8.0\ref\Inventory_Entities.dll
+C:\Users\omara\Desktop\Inventory_Project\Inventory_Entities\obj\Debug\net8.0\Inventory_Entities.sourcelink.json

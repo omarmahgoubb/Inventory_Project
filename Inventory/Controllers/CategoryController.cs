@@ -43,6 +43,8 @@ namespace Inventory_Self.Controllers
                     category.clientFile.CopyTo(stream);
                     category.dbimage = stream.ToArray();
                 }
+                // Assign the current user's email to the CreatedBy field
+                category.CreatedBy = User.Identity.Name;
                 unitOfWork.categories.Add(category);
                 TempData["successData"] = category.categoryName + " has been added successfully";
                 return RedirectToAction("Index");

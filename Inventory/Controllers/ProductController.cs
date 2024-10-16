@@ -39,6 +39,7 @@ namespace Inventory_Self.Controllers
         {
             if (ModelState.IsValid)
             {
+                // Capture the uploaded image if present
                 if (product.clientFile != null)
                 {
                     MemoryStream stream = new MemoryStream();
@@ -46,13 +47,22 @@ namespace Inventory_Self.Controllers
                     product.dbimage = stream.ToArray();
                 }
 
+                // Assign the current user's email to the CreatedBy field
+                product.CreatedBy = User.Identity.Name;
 
+                // Save the product using your unit of work or repository pattern
                 unitOfWork.products.Add(product);
+
+                // Notify the user that the product has been added
                 TempData["successData"] = product.productName + " has been added successfully";
+
                 return RedirectToAction("Index");
             }
+
+            // If the model state is invalid, return the view with the current product data
             return View(product);
         }
+
 
         public async Task<IActionResult> Details(int id)
         {

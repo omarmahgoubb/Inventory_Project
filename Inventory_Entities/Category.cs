@@ -38,6 +38,8 @@ namespace Inventory_Entities
                 }
             }
         }
+        [DisplayName("Created By")]
+        public string? CreatedBy { get; set; }
 
     }
 }
