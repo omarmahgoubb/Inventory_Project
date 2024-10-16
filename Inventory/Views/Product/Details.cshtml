@@ -9,7 +9,7 @@
     <p><strong>Price:</strong> @Model.productPrice.ToString("C")</p>
     <p><strong>Description:</strong> @Model.productDescription</p>
     <p><strong>Category:</strong> @Model.category?.categoryName</p>
-    <!-- Display the CreatedBy field (email of the user who created the product) -->
+    <p><strong>Inventory:</strong> @Model.inventory?.InventoryName</p> <!-- Display the inventory name -->
     <p><strong>Created By:</strong> @Model.CreatedBy</p>
     <p>
         <strong>Image:</strong>
@@ -18,8 +18,6 @@
     </p>
 
     <p><strong>Creation Date:</strong> @Model.CreationDate</p>
-
-   
 
     <a asp-controller="Product" asp-action="Index" class="btn btn-primary">Back to List</a>
 </div>

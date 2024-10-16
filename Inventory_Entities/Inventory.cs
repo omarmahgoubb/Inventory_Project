@@ -2,27 +2,25 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Inventory_Entities
 {
     public class Inventory
     {
         [Key]
-        public int id { get; set; }
-        [DisplayName("Inventory Name")]
+        public int Id { get; set; } // Updated to follow naming conventions
 
+        [Required] // Make it mandatory
+        [DisplayName("Inventory Name")]
         public string InventoryName { get; set; }
 
+        [Required] // Make it mandatory
         [DisplayName("Inventory Address")]
-        public string address { get; set; }
+        public string Address { get; set; } // Updated to follow naming conventions
 
-        public ICollection<Product>? products { get; set; }
+        public ICollection<Product>? Products { get; set; } // Updated to follow naming conventions
 
         [DisplayName("Created By")]
         public string? CreatedBy { get; set; }
-
     }
 }

@@ -31,14 +31,22 @@
 
         <div class="mb-3">
             <label asp-for="categoryId" class="form-label">Category</label>
-            <select asp-for="categoryId" class="form-control" asp-items="@ViewBag.categoryList"></select>
+            <select asp-for="categoryId" class="form-control" asp-items="@ViewBag.categoryList" required></select>
             <span asp-validation-for="categoryId" class="text-danger"></span>
         </div>
 
+        <div class="mb-3">
+            <label asp-for="inventoryId" class="form-label">Inventory</label>
+            <select asp-for="inventoryId" class="form-control" asp-items="@ViewBag.inventoryList" required></select>
+            <span asp-validation-for="inventoryId" class="text-danger"></span>
+        </div>
+
         <div>
-            <input type="file" asp-for="clientFile" onchange="loadFile(event)" />
+            <label asp-for="clientFile" class="form-label">Product Image</label>
+            <input type="file" asp-for="clientFile" class="form-control" onchange="loadFile(event)" />
             <img id="myImg" height="200px" />
         </div>
+
 
         <div class="mb-3">
             <button type="submit" class="btn btn-primary">Save Changes</button>
@@ -46,7 +54,6 @@
         </div>
     </form>
 </div>
-
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");

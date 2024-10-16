@@ -7,7 +7,7 @@
     <h1>@ViewData["Title"]</h1>
 
     <form asp-action="Edit" method="post">
-        <input type="hidden" asp-for="id" />
+        <input type="hidden" asp-for="Id" /> <!-- Updated to Id -->
 
         <div class="mb-3">
             <label asp-for="InventoryName" class="form-label">Inventory Name</label>
@@ -16,9 +16,9 @@
         </div>
 
         <div class="mb-3">
-            <label asp-for="address" class="form-label">Inventory Address</label>
-            <input asp-for="address" class="form-control" required />
-            <span asp-validation-for="address" class="text-danger"></span>
+            <label asp-for="Address" class="form-label">Inventory Address</label> <!-- Updated to Address -->
+            <input asp-for="Address" class="form-control" required />
+            <span asp-validation-for="Address" class="text-danger"></span>
         </div>
 
         <div asp-validation-summary="All" class="text-danger"></div>

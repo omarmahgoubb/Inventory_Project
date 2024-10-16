@@ -28,6 +28,7 @@ namespace Inventory_Self.Controllers
         //Get
         public async Task<IActionResult> Create()
         {
+            await createSelectInventoryListAsync(); // Add this line
             await createSelectCategoryListAsync();
             return View();
         }
@@ -66,15 +67,13 @@ namespace Inventory_Self.Controllers
 
         public async Task<IActionResult> Details(int id)
         {
-            if (id == null || id == 0)
-            {
-                return NotFound();
-            }
+           
             var product = await unitOfWork.products.FindByIdAsync(id);
             if (product == null)
             {
                 return NotFound();
             }
+            await createSelectInventoryListAsync();
             await createSelectCategoryListAsync();
             return View(product);
         }
@@ -83,6 +82,7 @@ namespace Inventory_Self.Controllers
         public async Task<IActionResult> Edit(int id)
         {
             var product = await unitOfWork.products.FindByIdAsync(id);
+            await createSelectInventoryListAsync(); // Add this line
             await createSelectCategoryListAsync();
             return View(product);
         }
@@ -116,15 +116,13 @@ namespace Inventory_Self.Controllers
 
         public async Task<IActionResult> Delete(int id)
         {
-            if (id == null || id == 0)
-            {
-                return NotFound();
-            }
+           
             var product = await unitOfWork.products.FindByIdAsync(id);
             if (product == null)
             {
                 return NotFound();
             }
+            await createSelectInventoryListAsync();
             await createSelectCategoryListAsync();
 
             return View(product);
@@ -147,5 +145,12 @@ namespace Inventory_Self.Controllers
             SelectList listItems = new SelectList(categories, "Id", "categoryName", selectId);
             ViewBag.categoryList = listItems;
         }
+        private async Task createSelectInventoryListAsync(int selectId = 0)
+        {
+            var inventories = await unitOfWork.inventories.FindAllAsync();
+            SelectList listItems = new SelectList(inventories, "Id", "InventoryName", selectId);
+            ViewBag.inventoryList = listItems;
+        }
+
     }
 }

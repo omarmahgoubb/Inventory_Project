@@ -57,7 +57,7 @@ namespace Inventory_Entities
         public string? CreatedBy { get; set; }
 
         [DisplayName("Inventory")]
-        [ForeignKey("Inventory")]
+        [ForeignKey("Inventory_Entities.Inventory")]
         public int? inventoryId { get; set; }
 
         public Inventory? inventory { get; set; }

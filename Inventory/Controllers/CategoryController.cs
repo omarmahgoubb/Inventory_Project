@@ -55,10 +55,7 @@ namespace Inventory_Self.Controllers
 
         public async Task<IActionResult> Details(int id)
         {
-            if (id == null || id == 0)
-            {
-                return NotFound();
-            }
+           
             var category = await unitOfWork.categories.FindByIdAsync(id);
             if (category == null)
             {
@@ -89,10 +86,7 @@ namespace Inventory_Self.Controllers
         }
         public async Task<IActionResult> Delete(int id)
         {
-            if (id == null || id == 0)
-            {
-                return NotFound();
-            }
+           
             var category = await unitOfWork.categories.FindByIdAsync(id);
             if (category == null)
             {
