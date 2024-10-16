@@ -1,58 +1,108 @@
 ﻿@using Inventory_Entities
-@{
-    Layout = "_Layout"; // Use the new layout for the home page
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+
+@if (SignInManager.IsSignedIn(User))
+{
+    <br />
+    <br />
+    <h1 class="text-center">Welcome to Inventory</h1>
+
+    <!-- Partial view for login/logout/register -->
+
+    <div class="row justify-content-center mt-4 animated-container">
+        
+        <div class="col-md-4 box">
+            
+            <h3 class="text-center">Product Management</h3>
+            <p class="text-center">Manage your products efficiently.</p>
+            <div class="text-center">
+                <a asp-controller="Product" asp-action="Index" class="btn btn-primary" style="color: aqua;">Go to Products</a>
+            </div>
+        </div>
+
+        <div class="col-md-4 box">
+            <h3 class="text-center">Category Management</h3>
+            <p class="text-center">Manage your categories efficiently.</p>
+            <div class="text-center">
+                <a asp-controller="Category" asp-action="Index" class="btn btn-primary" style="color: aqua;">Go to Categories</a>
+            </div>
+        </div>
+
+        <div class="col-md-4 box">
+            <h3 class="text-center">Inventory Management</h3>
+            <p class="text-center">Manage your inventories effectively.</p>
+            <div class="text-center">
+                <a asp-controller="Inventory" asp-action="Index" class="btn btn-primary" style="color: aqua;">Go to Inventories</a>
+            </div>
+        </div>
+
+        @if (User.IsInRole(RolesNames.roleAdmin))
+        {
+            <div class="col-md-4 box">
+                <h3 class="text-center">User Roles Management</h3>
+                <p class="text-center">Manage user roles and permissions.</p>
+                <div class="text-center">
+                    <a asp-controller="Roles" asp-action="Index" class="btn btn-primary" style="color: aqua;">Go to Roles</a>
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <!-- Partial view for login/register -->
+
+    <div class="container mt-5 animated-container  noHoverBox">
+        <!-- Add animated-container class here -->
+        <br />
+        <h1 class="text-center display-5 fw-bold">Welcome to Our Inventory Management System!</h1>
+        <p class="text-center fs-4 mt-3">Manage your products, categories, and inventories efficiently and effectively.</p>
+        <br />
+
+
+        <div class="mt-5">
+            <h3 class="text-center">Join Us Today!</h3>
+            <p class="text-center fs-5">Create an account or log in to access all features</p>
+        </div>
+        <br />
+
+        <div class="mt-5">
+            <h3 class="text-center">Why Sign Up?</h3>
+            <ul class="list-unstyled fs-5 text-center">
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Manage your own products and categories.</li>
+                <li class="mt-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Track inventory levels and receive notifications.</li>
+            </ul>
+        </div>
+        <br />
+
+        <div class="mt-5">
+            <h3 class="text-center">Need Help?</h3>
+            <p class="text-center fs-5">Contact us at <a href="mailto:omar.ahmed2004@outlook.com" class="fw-bold text-primary">omar.ahmed2004@outlook.com</a></p>
+        </div>
+    </div>
 }
 
-<h1 class="text-center">Welcome to Inventory</h1>
-<div class="row justify-content-center mt-4">
-    <div class="col-md-4 box">
-        <h3 class="text-center">Product Management</h3>
-        <p class="text-center">Manage your products efficiently.</p>
-        <div class="text-center">
-            <a asp-controller="Product" asp-action="Index" class="btn btn-primary" style="color: aqua;">Go to Products</a>
-        </div>
-    </div>
+<style>
+    /* CSS for the transition effect */
+    .animated-container {
+        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        opacity: 0; /* Initially hidden */
+        transform: translateY(30px); /* Start position for the animation */
+    }
 
-    <div class="col-md-4 box">
-        <h3 class="text-center">Category Management</h3>
-        <p class="text-center">Manage your categories efficiently.</p>
-        <div class="text-center">
-            <a asp-controller="Category" asp-action="Index" class="btn btn-primary" style="color: aqua;">Go to Categories</a>
-        </div>
-    </div>
+        .animated-container.show {
+            opacity: 1; /* Fully visible */
+            transform: translateY(0); /* Move to original position */
+        }
+</style>
 
-    <div class="col-md-4 box">
-        <h3 class="text-center">Inventory Management</h3>
-        <p class="text-center">Manage your inventories effectively.</p>
-        <div class="text-center">
-            <a asp-controller="Inventory" asp-action="Index" class="btn btn-primary" style="color: aqua;">Go to Inventories</a>
-        </div>
-    </div>
-     @if (User.IsInRole(RolesNames.roleAdmin))
-     {
-    <div class="col-md-4 box">
-        <h3 class="text-center">User Roles Management</h3>
-        <p class="text-center">Manage user roles and permissions.</p>
-        <div class="text-center">
-            <a asp-controller="Roles" asp-action="Index" class="btn btn-primary" style="color: aqua;">Go to Roles</a>
-        </div>
-    </div>
-     }
-    @* Uncomment to include more boxes *@
-    @*
-    <div class="col-md-4 box">
-    <h3 class="text-center">Orders</h3>
-    <p class="text-center">Track your orders seamlessly.</p>
-    <div class="text-center">
-    <a asp-controller="Order" asp-action="Index" class="btn btn-primary">View Orders</a>
-    </div>
-    </div>
-    <div class="col-md-4 box">
-    <h3 class="text-center">Reports</h3>
-    <p class="text-center">Generate insightful reports.</p>
-    <div class="text-center">
-    <a asp-controller="Report" asp-action="Index" class="btn btn-primary">View Reports</a>
-    </div>
-    </div>
-    *@
-</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const container = document.querySelector('.animated-container');
+        // Trigger the animation after a short delay
+        setTimeout(() => {
+            container.classList.add('show');
+        }, 100); // Adjust delay as needed
+    });
+</script>

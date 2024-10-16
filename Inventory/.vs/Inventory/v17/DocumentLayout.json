@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\omara\\Desktop\\Inventory_Project\\Inventory\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6A674DD2-4A64-4FA0-8764-539171A7E4EC}|Inventory.csproj|c:\\users\\omara\\desktop\\inventory_project\\inventory\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6A674DD2-4A64-4FA0-8764-539171A7E4EC}|Inventory.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6A674DD2-4A64-4FA0-8764-539171A7E4EC}|Inventory.csproj|c:\\users\\omara\\desktop\\inventory_project\\inventory\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6A674DD2-4A64-4FA0-8764-539171A7E4EC}|Inventory.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A674DD2-4A64-4FA0-8764-539171A7E4EC}|Inventory.csproj|c:\\users\\omara\\desktop\\inventory_project\\inventory\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6A674DD2-4A64-4FA0-8764-539171A7E4EC}|Inventory.csproj|solutionrelative:views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6A674DD2-4A64-4FA0-8764-539171A7E4EC}|Inventory.csproj|c:\\users\\omara\\desktop\\inventory_project\\inventory\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A674DD2-4A64-4FA0-8764-539171A7E4EC}|Inventory.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6A674DD2-4A64-4FA0-8764-539171A7E4EC}|Inventory.csproj|c:\\users\\omara\\desktop\\inventory_project\\inventory\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6A674DD2-4A64-4FA0-8764-539171A7E4EC}|Inventory.csproj|solutionrelative:views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6A674DD2-4A64-4FA0-8764-539171A7E4EC}|Inventory.csproj|c:\\users\\omara\\desktop\\inventory_project\\inventory\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6A674DD2-4A64-4FA0-8764-539171A7E4EC}|Inventory.csproj|solutionrelative:views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,77 +22,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\omara\\Desktop\\Inventory_Project\\Inventory\\Views\\Category\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Category\\Index.cshtml",
-              "ToolTip": "C:\\Users\\omara\\Desktop\\Inventory_Project\\Inventory\\Views\\Category\\Index.cshtml",
-              "RelativeToolTip": "Views\\Category\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-16T18:04:40.486Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\omara\\Desktop\\Inventory_Project\\Inventory\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\omara\\Desktop\\Inventory_Project\\Inventory\\Views\\Home\\Index.cshtml*",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-16T18:34:08.274Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_LoginPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\omara\\Desktop\\Inventory_Project\\Inventory\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_LoginPartial.cshtml",
-              "ToolTip": "C:\\Users\\omara\\Desktop\\Inventory_Project\\Inventory\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_LoginPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAACPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-16T18:30:52.38Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\omara\\Desktop\\Inventory_Project\\Inventory\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\omara\\Desktop\\Inventory_Project\\Inventory\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAABuAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\omara\\Desktop\\Inventory_Project\\Inventory\\Views\\Shared\\_Layout.cshtml*",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml*",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAFEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-16T18:13:18.803Z",
+              "WhenOpened": "2024-10-16T20:31:28.343Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\omara\\Desktop\\Inventory_Project\\Inventory\\Views\\Product\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Product\\Index.cshtml",
-              "ToolTip": "C:\\Users\\omara\\Desktop\\Inventory_Project\\Inventory\\Views\\Product\\Index.cshtml",
-              "RelativeToolTip": "Views\\Product\\Index.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAADoAAABCAAAAAAAAAA==",
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\omara\\Desktop\\Inventory_Project\\Inventory\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\omara\\Desktop\\Inventory_Project\\Inventory\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-16T18:05:48.394Z",
+              "WhenOpened": "2024-10-16T19:47:06.172Z",
               "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\omara\\Desktop\\Inventory_Project\\Inventory\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\omara\\Desktop\\Inventory_Project\\Inventory\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-16T19:26:41.768Z",
+              "EditorCaption": ""
             }
           ]
         }
