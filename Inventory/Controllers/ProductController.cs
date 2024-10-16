@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace Inventory_Self.Controllers
 {
-    [Authorize(Roles = RolesNames.roleAdmin)]
+    //[Authorize(Roles = RolesNames.roleAdmin)]
     public class ProductController : Controller
     {
         private readonly IUnitOfWork unitOfWork;
