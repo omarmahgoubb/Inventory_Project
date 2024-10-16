@@ -20,8 +20,8 @@
                 <th scope="col">Product Price</th>
                 <th scope="col">Product Category</th>
                 <th scope="col">Product Image</th>
-
-
+                <th scope="col">Inventory</th> <!-- New column for Inventory -->
+                <th scope="col">Created By</th> <!-- New column for Created By -->
                 <th scope="col" class="text-center">Actions</th>
             </tr>
         </thead>
@@ -29,7 +29,7 @@
             @if (!Model.Any())
             {
                 <tr>
-                    <td colspan="3" class="text-center">No products found.</td>
+                    <td colspan="7" class="text-center">No products found.</td>
                 </tr>
             }
             else
@@ -37,17 +37,21 @@
                 foreach (var product in Model)
                 {
                     <tr>
-                        <td scope="row">@product.productName</td>
-                        <td scope="row">@product.productPrice.ToString("C")</td>
-                        <td scope="row">@((product.category != null) ? product.category.categoryName : "No Category")</td>
+                        <td scope="row">@(!string.IsNullOrEmpty(product.productName) ? product.productName : "No Product Name")</td>
+                        <td scope="row">@((product.productPrice > 0) ? product.productPrice.ToString("C") : "No Price")</td>
+                        <td scope="row">@((product.category != null && !string.IsNullOrEmpty(product.category.categoryName)) ? product.category.categoryName : "No Category")</td>
                         <td>
-                            <img src="@product.imageSrc" style="width:48px" class="img-thumbnail" />
+                            @if (!string.IsNullOrEmpty(product.imageSrc))
+                            {
+                                <img src="@product.imageSrc" style="width:48px" class="img-thumbnail" />
+                            }
+                            else
+                            {
+                                <span>No Image</span>
+                            }
                         </td>
-
-
-
-
-
+                        <td>@((product.inventory != null && !string.IsNullOrEmpty(product.inventory.InventoryName)) ? product.inventory.InventoryName : "No Inventory")</td> <!-- Display Inventory Name -->
+                        <td>@(!string.IsNullOrEmpty(product.CreatedBy) ? product.CreatedBy : "No Creator")</td> <!-- Display Created By -->
 
                         <td class="text-center">
                             <a asp-controller="Product" asp-action="Details" asp-route-id="@product.Id" class="btn btn-sm btn-info">
@@ -60,9 +64,7 @@
                                 <i class="bi bi-trash3"></i> Delete
                             </a>
                         </td>
-
                     </tr>
-
                 }
             }
         </tbody>

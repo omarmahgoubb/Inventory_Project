@@ -20,10 +20,11 @@ namespace Inventory_Self.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var productList = await unitOfWork.products.FindAllAsync("category");
-
+            // Include both category and inventory in one query
+            var productList = await unitOfWork.products.FindAllAsync("category", "inventory");
             return View(productList);
         }
+
 
         //Get
         public async Task<IActionResult> Create()
@@ -106,6 +107,7 @@ namespace Inventory_Self.Controllers
                         product.dbimage = stream.ToArray();
                     }
                 }
+                product.CreatedBy = User.Identity.Name;
 
                 unitOfWork.products.Update(product);
                 TempData["successData"] = product.productName + " has been edited successfully";
@@ -139,13 +141,13 @@ namespace Inventory_Self.Controllers
             return RedirectToAction("Index");
         }
 
-        private async Task createSelectCategoryListAsync(int selectId = 5)
+        private async Task createSelectCategoryListAsync(int selectId = 8)
         {
             var categories = await unitOfWork.categories.FindAllAsync();
             SelectList listItems = new SelectList(categories, "Id", "categoryName", selectId);
             ViewBag.categoryList = listItems;
         }
-        private async Task createSelectInventoryListAsync(int selectId = 0)
+        private async Task createSelectInventoryListAsync(int selectId = 4)
         {
             var inventories = await unitOfWork.inventories.FindAllAsync();
             SelectList listItems = new SelectList(inventories, "Id", "InventoryName", selectId);
