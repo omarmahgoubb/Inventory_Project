@@ -42,8 +42,8 @@
               "Title": "Register.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\omara\\Desktop\\InventoryTest\\Inventory_Project\\Inventory\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ToolTip": "C:\\Users\\omara\\Desktop\\InventoryTest\\Inventory_Project\\Inventory\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs*",
-              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs*",
+              "ToolTip": "C:\\Users\\omara\\Desktop\\InventoryTest\\Inventory_Project\\Inventory\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "ViewState": "AgIAAKcAAAAAAAAAAADwv8EAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T15:14:47.223Z",
@@ -59,8 +59,7 @@
               "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-18T15:14:44.643Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T15:14:44.643Z"
             },
             {
               "$type": "Document",
@@ -72,8 +71,7 @@
               "RelativeToolTip": "Views\\Product\\Create.cshtml",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-18T15:09:06.04Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T15:09:06.04Z"
             }
           ]
         }
