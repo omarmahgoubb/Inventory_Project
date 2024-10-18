@@ -1,10 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\omara\\Desktop\\InventoryTest\\Inventory_Project\\Inventory\\",
+  "WorkspaceRootPath": "C:\\Users\\omara\\Desktop\\Inventory_GitHub\\Inventory_Project\\Inventory\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6A674DD2-4A64-4FA0-8764-539171A7E4EC}|Inventory.csproj|c:\\users\\omara\\desktop\\inventorytest\\inventory_project\\inventory\\views\\inventory\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6A674DD2-4A64-4FA0-8764-539171A7E4EC}|Inventory.csproj|solutionrelative:views\\inventory\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\omara\\Desktop\\Inventory_GitHub\\Inventory_Project\\Inventory_database\\Migrations\\20241018193010_UpdatedSupplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E2A747D-335C-42AF-8B99-C95EE77867B1}|..\\Inventory_Entities\\Inventory_Entities.csproj|c:\\users\\omara\\desktop\\inventory_github\\inventory_project\\inventory_entities\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,14 +29,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\omara\\Desktop\\InventoryTest\\Inventory_Project\\Inventory\\Views\\Inventory\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Inventory\\Index.cshtml",
-              "ToolTip": "C:\\Users\\omara\\Desktop\\InventoryTest\\Inventory_Project\\Inventory\\Views\\Inventory\\Index.cshtml*",
-              "RelativeToolTip": "Views\\Inventory\\Index.cshtml*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-18T18:46:30.635Z",
+              "Title": "20241018193010_UpdatedSupplier.cs",
+              "DocumentMoniker": "C:\\Users\\omara\\Desktop\\Inventory_GitHub\\Inventory_Project\\Inventory_database\\Migrations\\20241018193010_UpdatedSupplier.cs",
+              "RelativeDocumentMoniker": "..\\Inventory_database\\Migrations\\20241018193010_UpdatedSupplier.cs",
+              "ToolTip": "C:\\Users\\omara\\Desktop\\Inventory_GitHub\\Inventory_Project\\Inventory_database\\Migrations\\20241018193010_UpdatedSupplier.cs",
+              "RelativeToolTip": "..\\Inventory_database\\Migrations\\20241018193010_UpdatedSupplier.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T19:30:10.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Supplier.cs",
+              "DocumentMoniker": "C:\\Users\\omara\\Desktop\\Inventory_GitHub\\Inventory_Project\\Inventory_Entities\\Supplier.cs",
+              "RelativeDocumentMoniker": "..\\Inventory_Entities\\Supplier.cs",
+              "ToolTip": "C:\\Users\\omara\\Desktop\\Inventory_GitHub\\Inventory_Project\\Inventory_Entities\\Supplier.cs",
+              "RelativeToolTip": "..\\Inventory_Entities\\Supplier.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T19:22:33.273Z",
               "EditorCaption": ""
             }
           ]

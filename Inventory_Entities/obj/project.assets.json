@@ -4256,11 +4256,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\omara\\Desktop\\InventoryTest\\Inventory_Project\\Inventory_Entities\\Inventory_Entities.csproj",
+      "projectUniqueName": "C:\\Users\\omara\\Desktop\\Inventory_GitHub\\Inventory_Project\\Inventory_Entities\\Inventory_Entities.csproj",
       "projectName": "Inventory_Entities",
-      "projectPath": "C:\\Users\\omara\\Desktop\\InventoryTest\\Inventory_Project\\Inventory_Entities\\Inventory_Entities.csproj",
+      "projectPath": "C:\\Users\\omara\\Desktop\\Inventory_GitHub\\Inventory_Project\\Inventory_Entities\\Inventory_Entities.csproj",
       "packagesPath": "C:\\Users\\omara\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\omara\\Desktop\\InventoryTest\\Inventory_Project\\Inventory_Entities\\obj\\",
+      "outputPath": "C:\\Users\\omara\\Desktop\\Inventory_GitHub\\Inventory_Project\\Inventory_Entities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
