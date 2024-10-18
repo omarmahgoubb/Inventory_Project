@@ -1,18 +1,25 @@
 ﻿@model Inventory_Entities.Category
+
 @{
     ViewData["Title"] = "Edit Category";
 }
 
 <div class="container mt-4">
-    <h1>@ViewData["Title"]</h1>
+    <h1 class="mb-4" style="text-decoration: underline;">@Model.categoryName</h1>
 
-    <form asp-action="Edit" method="post">
+    <form asp-action="Edit" method="post" enctype="multipart/form-data">
         <input type="hidden" asp-for="Id" />
 
         <div class="mb-3">
             <label asp-for="categoryName" class="form-label">Category Name</label>
             <input asp-for="categoryName" class="form-control" required />
             <span asp-validation-for="categoryName" class="text-danger"></span>
+        </div>
+
+        <div>
+            <label asp-for="clientFile" class="form-label">Category Image</label>
+            <input type="file" asp-for="clientFile" class="form-control" onchange="loadFile(event)" />
+            <img id="myImg" height="200px" />
         </div>
 
         <div asp-validation-summary="All" class="text-danger"></div>

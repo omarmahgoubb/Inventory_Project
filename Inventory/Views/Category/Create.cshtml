@@ -13,9 +13,10 @@
             <span asp-validation-for="categoryName" class="text-danger"></span>
         </div>
 
-        <div>
-            <input type="file" asp-for="clientFile" onchange="loadFile(event)" />
-            <img id="myImg" height="200px" />
+        <div class="mb-3">
+            <label class="form-label">Category Image</label>
+            <input type="file" asp-for="clientFile" class="form-control" onchange="loadFile(event)" />
+            <img id="myImg" style="display:none; margin-top: 10px; max-height: 200px; max-width: 200px;" class="img-thumbnail" />
         </div>
 
         <div asp-validation-summary="All" class="text-danger"></div>
