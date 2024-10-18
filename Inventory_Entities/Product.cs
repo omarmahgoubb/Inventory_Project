@@ -11,14 +11,21 @@ namespace Inventory_Entities
         public int Id { get; set; }
 
         [DisplayName("Product Name")]
+        [StringLength(100, ErrorMessage = "Product name cannot exceed 100 characters.")]
         public string productName { get; set; }
 
         [DisplayName("Product Description")]
+        [StringLength(500, ErrorMessage = "Description cannot exceed 500 characters.")]
+
         public string? productDescription { get; set; }
 
         [DisplayName("Product Price")]
-        [Range(1, 10000, ErrorMessage = "price must be greater than 0")]
+        [Range(0.01, 100000, ErrorMessage = "price must be greater than 0")]
         public float productPrice { get; set; }
+
+        [DisplayName("Product Quantity")]
+        [Range(0, int.MaxValue, ErrorMessage = "Quantity cannot be negative.")]
+        public int productQuantity { get; set; } // New field for product quantity
 
         public DateTime? CreationDate { get; set; } = DateTime.Now;
 

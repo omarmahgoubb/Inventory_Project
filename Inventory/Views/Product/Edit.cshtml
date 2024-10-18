@@ -30,6 +30,12 @@
         </div>
 
         <div class="mb-3">
+            <label asp-for="productQuantity" class="form-label">Product Quantity</label> <!-- Added Quantity Label -->
+            <input asp-for="productQuantity" class="form-control" type="number" min="0" required /> <!-- Added Quantity Input -->
+            <span asp-validation-for="productQuantity" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
             <label asp-for="categoryId" class="form-label">Category</label>
             <select asp-for="categoryId" class="form-control" asp-items="@ViewBag.categoryList" required></select>
             <span asp-validation-for="categoryId" class="text-danger"></span>
