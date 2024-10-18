@@ -8568,11 +8568,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\omara\\Desktop\\Inventory_Project\\Inventory\\Inventory.csproj",
+      "projectUniqueName": "C:\\Users\\omara\\Desktop\\InventoryTest\\Inventory_Project\\Inventory\\Inventory.csproj",
       "projectName": "Inventory",
-      "projectPath": "C:\\Users\\omara\\Desktop\\Inventory_Project\\Inventory\\Inventory.csproj",
+      "projectPath": "C:\\Users\\omara\\Desktop\\InventoryTest\\Inventory_Project\\Inventory\\Inventory.csproj",
       "packagesPath": "C:\\Users\\omara\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\omara\\Desktop\\Inventory_Project\\Inventory\\obj\\",
+      "outputPath": "C:\\Users\\omara\\Desktop\\InventoryTest\\Inventory_Project\\Inventory\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -8594,17 +8594,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\omara\\Desktop\\Inventory_Project\\Inventory_database\\Inventory_database.csproj": {
-              "projectPath": "C:\\Users\\omara\\Desktop\\Inventory_Project\\Inventory_database\\Inventory_database.csproj"
+            "C:\\Users\\omara\\Desktop\\InventoryTest\\Inventory_Project\\Inventory_database\\Inventory_database.csproj": {
+              "projectPath": "C:\\Users\\omara\\Desktop\\InventoryTest\\Inventory_Project\\Inventory_database\\Inventory_database.csproj"
             },
-            "C:\\Users\\omara\\Desktop\\Inventory_Project\\Inventory_Entities\\Inventory_Entities.csproj": {
-              "projectPath": "C:\\Users\\omara\\Desktop\\Inventory_Project\\Inventory_Entities\\Inventory_Entities.csproj"
+            "C:\\Users\\omara\\Desktop\\InventoryTest\\Inventory_Project\\Inventory_Entities\\Inventory_Entities.csproj": {
+              "projectPath": "C:\\Users\\omara\\Desktop\\InventoryTest\\Inventory_Project\\Inventory_Entities\\Inventory_Entities.csproj"
             },
-            "C:\\Users\\omara\\Desktop\\Inventory_Project\\Inventory_Repositories\\Inventory_Repositories.csproj": {
-              "projectPath": "C:\\Users\\omara\\Desktop\\Inventory_Project\\Inventory_Repositories\\Inventory_Repositories.csproj"
+            "C:\\Users\\omara\\Desktop\\InventoryTest\\Inventory_Project\\Inventory_Repositories\\Inventory_Repositories.csproj": {
+              "projectPath": "C:\\Users\\omara\\Desktop\\InventoryTest\\Inventory_Project\\Inventory_Repositories\\Inventory_Repositories.csproj"
             },
-            "C:\\Users\\omara\\Desktop\\Inventory_Project\\Inventory_Unit\\Inventory_Unit.csproj": {
-              "projectPath": "C:\\Users\\omara\\Desktop\\Inventory_Project\\Inventory_Unit\\Inventory_Unit.csproj"
+            "C:\\Users\\omara\\Desktop\\InventoryTest\\Inventory_Project\\Inventory_Unit\\Inventory_Unit.csproj": {
+              "projectPath": "C:\\Users\\omara\\Desktop\\InventoryTest\\Inventory_Project\\Inventory_Unit\\Inventory_Unit.csproj"
             }
           }
         }
