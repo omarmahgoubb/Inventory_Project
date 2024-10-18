@@ -1,0 +1,28 @@
+﻿@model Inventory_Entities.Supplier
+
+@{
+    ViewData["Title"] = "Supplier Details";
+    // You can also add a default image or logo for the supplier if applicable
+    var defaultImageSrc = Url.Content("~/No_Image_Available.jpg");
+}
+
+<div class="container mt-4">
+    <h1 class="noHoverBox mb-4">@Model.SupplierName</h1>
+    <div class="col-md-6">
+        <h3 class="mb-3" style="font-size: 2.2rem; text-decoration: underline;">Supplier Attributes:</h3>
+        <ul style="font-size: 1.5rem;">
+            <li><strong>Contact Number:</strong> @(Model.SupplierPhone ?? "No contact number available")</li>
+            <br />
+            <li><strong>Email:</strong> @(Model.SupplierEmail ?? "No email available")</li>
+            <br />
+            <li><strong>Address:</strong> @(Model.SupplierAddress ?? "No address available")</li>
+            <br />
+            <li><strong>City:</strong> @(Model.City ?? "No city information available")</li>
+            <br />
+        </ul>
+    </div>
+</div>
+
+<div class="text-center mt-4">
+    <a asp-controller="Supplier" asp-action="Index" class="btn btn-primary">Back to List</a>
+</div>

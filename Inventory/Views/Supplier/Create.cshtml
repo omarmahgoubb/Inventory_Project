@@ -1,0 +1,40 @@
+﻿@model Inventory_Entities.Supplier
+@{
+    ViewData["Title"] = "Create Supplier";
+}
+
+<div class="container mt-4">
+    <h1>@ViewData["Title"]</h1>
+
+    <form asp-action="Create" method="post">
+        <div class="mb-3">
+            <label asp-for="SupplierName" class="form-label">Name</label>
+            <input asp-for="SupplierName" class="form-control" />
+            <span asp-validation-for="SupplierName" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="SupplierPhone" class="form-label">Phone</label>
+            <input asp-for="SupplierPhone" class="form-control" />
+            <span asp-validation-for="SupplierPhone" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="SupplierEmail" class="form-label">Email</label>
+            <input asp-for="SupplierEmail" class="form-control" />
+            <span asp-validation-for="SupplierEmail" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="City" class="form-label"></label>
+            <input asp-for="City" class="form-control" />
+            <span asp-validation-for="City" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="SupplierAddress" class="form-label">Address</label>
+            <input asp-for="SupplierAddress" class="form-control" />
+            <span asp-validation-for="SupplierAddress" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary">Create</button>
+            <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,39 @@
+﻿@model Inventory_Entities.Supplier
+@{
+    ViewData["Title"] = "Edit Supplier";
+}
+
+<div class="container mt-4">
+    <h1>@ViewData["Title"]</h1>
+
+    <form asp-action="Edit" method="post">
+        <input type="hidden" asp-for="Id" />
+        <div class="mb-3">
+            <label asp-for="SupplierName" class="form-label"></label>
+            <input asp-for="SupplierName" class="form-control" />
+            <span asp-validation-for="SupplierName" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="SupplierPhone" class="form-label"></label>
+            <input asp-for="SupplierPhone" class="form-control" />
+            <span asp-validation-for="SupplierPhone" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="SupplierEmail" class="form-label"></label>
+            <input asp-for="SupplierEmail" class="form-control" />
+            <span asp-validation-for="SupplierEmail" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="SupplierAddress" class="form-label"></label>
+            <input asp-for="SupplierAddress" class="form-control" />
+            <span asp-validation-for="SupplierAddress" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="City" class="form-label"></label>
+            <input asp-for="City" class="form-control" />
+            <span asp-validation-for="City" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Save Changes</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>

@@ -107,7 +107,7 @@ namespace Inventory_Self.Controllers
             if (inventory != null)
             {
                 unitOfWork.inventories.Delete(inventory);
-                TempData["successData"] = inventory.InventoryName + " has been deleted successfully";
+                TempData["errorData"] = inventory.InventoryName + " has been deleted successfully";
             }
             return RedirectToAction("Index");
         }

@@ -10,6 +10,13 @@ namespace Inventory_Unit
     {
         private readonly DataBaseContext context;
 
+        public IRepository<Product> products { get; private set; }
+
+        public IRepository<Inventory> inventories { get; private set; }
+
+        public IRepository<Supplier> suppliers { get; private set; }
+        public IRepository<Category> categories { get; private set; }
+
         public UnitOfWork(DataBaseContext context)
         {
             this.context = context;
@@ -20,12 +27,7 @@ namespace Inventory_Unit
 
         }
 
-        public IRepository<Product> products { get; private set; }
-
-        public IRepository<Inventory> inventories { get; private set; }
-
-        public IRepository<Supplier> suppliers { get; private set; }
-        public IRepository<Category> categories { get; private set; }
+        
 
         public int CommitChanges()
         {
