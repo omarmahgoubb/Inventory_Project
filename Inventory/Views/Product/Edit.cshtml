@@ -47,10 +47,10 @@
             <span asp-validation-for="inventoryId" class="text-danger"></span>
         </div>
 
-        <div>
-            <label asp-for="clientFile" class="form-label">Product Image</label>
+        <div class="mb-3">
+            <label class="form-label">Product Image</label>
             <input type="file" asp-for="clientFile" class="form-control" onchange="loadFile(event)" />
-            <img id="myImg" height="200px" />
+            <img id="myImg" style="display:none; margin-top: 10px; max-height: 200px; max-width: 200px;" class="img-thumbnail" />
         </div>
 
 

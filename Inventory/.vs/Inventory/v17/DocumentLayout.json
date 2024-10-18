@@ -3,15 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\omara\\Desktop\\InventoryTest\\Inventory_Project\\Inventory\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6A674DD2-4A64-4FA0-8764-539171A7E4EC}|Inventory.csproj|c:\\users\\omara\\desktop\\inventorytest\\inventory_project\\inventory\\views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6A674DD2-4A64-4FA0-8764-539171A7E4EC}|Inventory.csproj|solutionrelative:views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6A674DD2-4A64-4FA0-8764-539171A7E4EC}|Inventory.csproj|c:\\users\\omara\\desktop\\inventorytest\\inventory_project\\inventory\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6A674DD2-4A64-4FA0-8764-539171A7E4EC}|Inventory.csproj|solutionrelative:views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E2A747D-335C-42AF-8B99-C95EE77867B1}|..\\Inventory_Entities\\Inventory_Entities.csproj|c:\\users\\omara\\desktop\\inventorytest\\inventory_project\\inventory_entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6A674DD2-4A64-4FA0-8764-539171A7E4EC}|Inventory.csproj|c:\\users\\omara\\desktop\\inventorytest\\inventory_project\\inventory\\views\\inventory\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A674DD2-4A64-4FA0-8764-539171A7E4EC}|Inventory.csproj|solutionrelative:views\\inventory\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,49 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\omara\\Desktop\\InventoryTest\\Inventory_Project\\Inventory_Entities\\Category.cs",
-              "RelativeDocumentMoniker": "..\\Inventory_Entities\\Category.cs",
-              "ToolTip": "C:\\Users\\omara\\Desktop\\InventoryTest\\Inventory_Project\\Inventory_Entities\\Category.cs",
-              "RelativeToolTip": "..\\Inventory_Entities\\Category.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T17:52:03.41Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\omara\\Desktop\\InventoryTest\\Inventory_Project\\Inventory\\Views\\Category\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\Category\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\omara\\Desktop\\InventoryTest\\Inventory_Project\\Inventory\\Views\\Category\\Edit.cshtml*",
-              "RelativeToolTip": "Views\\Category\\Edit.cshtml*",
-              "ViewState": "AgIAABQAAAAAAAAAAAAkwB8AAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-18T17:58:42.65Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\omara\\Desktop\\InventoryTest\\Inventory_Project\\Inventory\\Views\\Product\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\Product\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\omara\\Desktop\\InventoryTest\\Inventory_Project\\Inventory\\Views\\Product\\Edit.cshtml",
-              "RelativeToolTip": "Views\\Product\\Edit.cshtml",
-              "ViewState": "AgIAADMAAAAAAAAAAAAkwE0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-18T17:58:23.694Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -71,6 +23,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\omara\\Desktop\\InventoryTest\\Inventory_Project\\Inventory\\Views\\Inventory\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Inventory\\Index.cshtml",
+              "ToolTip": "C:\\Users\\omara\\Desktop\\InventoryTest\\Inventory_Project\\Inventory\\Views\\Inventory\\Index.cshtml*",
+              "RelativeToolTip": "Views\\Inventory\\Index.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T18:46:30.635Z",
+              "EditorCaption": ""
             }
           ]
         }
