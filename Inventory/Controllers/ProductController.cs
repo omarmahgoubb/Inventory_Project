@@ -22,6 +22,12 @@ namespace Inventory_Self.Controllers
         {
             // Include both category and inventory in one query
             var productList = await unitOfWork.products.FindAllAsync("category", "inventory");
+            var lowQuantityProducts = productList.Where(p => p.productQuantity < 5).ToList();
+            if (lowQuantityProducts.Any())
+            {
+                string productNames = string.Join(", ", lowQuantityProducts.Select(p => p.productName));
+                TempData["errorData"] = productNames + " have low quantity!";
+            }
             return View(productList);
         }
 
@@ -138,6 +144,7 @@ namespace Inventory_Self.Controllers
             var product = await unitOfWork.products.FindByIdAsync(id);
             unitOfWork.products.Delete(product);
             TempData["errorData"] = product.productName + " has been deleted successfully";
+
             return RedirectToAction("Index");
         }
 

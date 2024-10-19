@@ -21,10 +21,10 @@
                 <th class="text-center" scope="col">Product Name</th>
                 <th class="text-center" scope="col">Product Price</th>
                 <th class="text-center" scope="col">Product Quantity</th> <!-- Added Quantity Column -->
-                <th class="text-center" scope="col">Product Category</th>
+               @*  <th class="text-center" scope="col">Product Category</th>
                 <th class="text-center" scope="col">Product Image</th>
                 <th class="text-center" scope="col">Inventory</th> <!-- New column for Inventory -->
-                <th class="text-center" scope="col">Created By</th> <!-- New column for Created By -->
+                <th class="text-center" scope="col">Created By</th> <!-- New column for Created By --> *@
                 <th class="text-center" scope="col" class="text-center">Actions</th>
 
             </tr>
@@ -46,7 +46,7 @@
                         <td class="text-center" scope="row">
                             @((product.productQuantity > 0) ? product.productQuantity.ToString() : "Out of Stock")
                         </td> <!-- Display Product Quantity -->
-                        <td class="text-center" scope="row">@((product.category != null && !string.IsNullOrEmpty(product.category.categoryName)) ? product.category.categoryName : "No Category")</td>
+                       @*  <td class="text-center" scope="row">@((product.category != null && !string.IsNullOrEmpty(product.category.categoryName)) ? product.category.categoryName : "No Category")</td>
                         <td class="text-center">
                             @if (!string.IsNullOrEmpty(product.imageSrc))
                             {
@@ -58,7 +58,7 @@
                             }
                         </td>
                         <td class="text-center">@((product.inventory != null && !string.IsNullOrEmpty(product.inventory.InventoryName)) ? product.inventory.InventoryName : "No Inventory")</td> <!-- Display Inventory Name -->
-                        <td class="text-center">@(!string.IsNullOrEmpty(product.CreatedBy) ? product.CreatedBy : "No Creator")</td> <!-- Display Created By -->
+                        <td class="text-center">@(!string.IsNullOrEmpty(product.CreatedBy) ? product.CreatedBy : "No Creator")</td> <!-- Display Created By --> *@
                         @if (User.IsInRole(RolesNames.roleAdmin) || User.IsInRole(RolesNames.roleSupplier))
                         {
                             <td class="text-center">

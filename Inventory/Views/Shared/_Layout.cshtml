@@ -45,42 +45,49 @@
             /* No hover effects */
             transition: none; /* You can keep it or remove it if you don't need transitions */
         }
+     
     </style>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-primary border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" style="color: aqua;">Inventory</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" style="color: white;">Inventory</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <!-- You can uncomment this section if you want to keep the navigation links -->
-                    @* <ul class="navbar-nav flex-grow-1">
+                    <ul class="navbar-nav flex-grow-1">
+                        
+
                     @if (signInManager.IsSignedIn(User))
                     {
                     <li class="nav-item">
-                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index" style="color: aqua;">Home</a>
+                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index" style="color: white;">Home</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" asp-area="" asp-controller="Product" asp-action="Index" style="color: aqua;">Products</a>
+                    <a class="nav-link" asp-area="" asp-controller="Product" asp-action="Index" style="color: white;">Products</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" asp-area="" asp-controller="Category" asp-action="Index" style="color: aqua;">Categories</a>
+                                <a class="nav-link" asp-area="" asp-controller="Category" asp-action="Index" style="color: white;">Categories</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" asp-area="" asp-controller="Inventory" asp-action="Index" style="color: aqua;">Inventories</a>
+                                <a class="nav-link" asp-area="" asp-controller="Inventory" asp-action="Index" style="color: white;">Inventories</a>
+                    </li>
+                     <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Supplier" asp-action="Index" style="color: white;">Suppliers</a>
                     </li>
                     @if (User.IsInRole(RolesNames.roleAdmin))
                     {
                     <li class="nav-item">
-                    <a class="nav-link" asp-area="" asp-controller="Roles" asp-action="Index" style="color: aqua;">User Roles</a>
+                                    <a class="nav-link" asp-area="" asp-controller="Roles" asp-action="Index" style="color: white;">User Roles</a>
                     </li>
                     }
                     }
-                    </ul> *@
+                    </ul>
+    
 
                     <div class="ms-auto">
                         <!-- This div will push the login partial to the right -->
@@ -98,12 +105,11 @@
     </div>
 
     <footer class="border-top footer text-muted">
-        <div class="container text-center">
+        <div class="container text-center" style="color:black">
             Omar Mahgoub | <a href="mailto:omar.ahmed2004@outlook.com">Email</a> | <a href="https://www.linkedin.com/in/omar-mahgoub-b732a9ba" target="_blank">LinkedIn</a> |
             <a href="https://github.com/omarmahgoubb" target="_blank">GitHub</a> |
             <a href="tel:+201004344758">+201004344758</a>
-            <hr>
-            <hr>
+            
         </div>
     </footer>
 

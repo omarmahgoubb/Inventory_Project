@@ -9,7 +9,7 @@
     <h1>@ViewData["Title"]</h1>
     <form asp-action="Create" method="post" enctype="multipart/form-data">
         <div class="mb-3">
-            <label asp-for="productName" class="form-label">Product Name</label>
+            <label asp-for="productName" class="form-label">Product Name *</label>
             <input asp-for="productName" class="form-control" required />
         </div>
         <div class="mb-3">
@@ -17,12 +17,12 @@
             <input asp-for="productDescription" class="form-control" />
         </div>
         <div class="mb-3">
-            <label asp-for="productPrice" class="form-label">Product Price</label>
+            <label asp-for="productPrice" class="form-label">Product Price *</label>
             <input asp-for="productPrice" class="form-control" type="number" step="0.01" required />
         </div>
 
         <div class="mb-3">
-            <label asp-for="productQuantity" class="form-label">Product Quantity</label>
+            <label asp-for="productQuantity" class="form-label">Product Quantity *</label>
             <input asp-for="productQuantity" class="form-control" type="number" required />
         </div>
 
@@ -38,7 +38,7 @@
         <div class="mb-3">
             <label class="form-label">Product Image</label>
             <input type="file" asp-for="clientFile" class="form-control" onchange="loadFile(event)" />
-            <img id="myImg" style="display:none; margin-top: 10px; max-height: 200px; max-width: 200px;" class="img-thumbnail" />
+            <img id="myImg" style="display:none; margin-top: 10px; max-height: 150px; max-width: 150px;" class="img-thumbnail" />
         </div>
 
 

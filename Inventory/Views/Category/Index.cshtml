@@ -20,8 +20,8 @@
         <thead class="table-dark">
             <tr class="table-primary">
                 <th class="text-center" scope="col">Category Name</th>
-                <th class="text-center" scope="col">Created By</th>
-                <th class="text-center" scope="col" class="text-center">Actions</th>
+@*                 <th class="text-center" scope="col">Created By</th>
+ *@                <th class="text-center" scope="col" class="text-center">Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -37,8 +37,8 @@
                 {
                     <tr>
                         <td class="text-center" scope="row">@(!string.IsNullOrEmpty(category.categoryName) ? category.categoryName : "No Category Name")</td>
-                        <td class="text-center">@(!string.IsNullOrEmpty(category.CreatedBy) ? category.CreatedBy : "No Creator")</td>
-                        @if (User.IsInRole(RolesNames.roleAdmin))
+@*                         <td class="text-center">@(!string.IsNullOrEmpty(category.CreatedBy) ? category.CreatedBy : "No Creator")</td>
+ *@                        @if (User.IsInRole(RolesNames.roleAdmin))
                         {
                             <td class="text-center">
                                 <a asp-controller="Category" asp-action="Edit" asp-route-id="@category.Id" class="btn btn-sm btn-success">

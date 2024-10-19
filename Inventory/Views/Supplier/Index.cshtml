@@ -23,8 +23,8 @@
             <tr class="table-primary">
                 <th scope="col">Supplier Name</th>
                 <th scope="col">Contact Number</th>
-                <th scope="col">Email</th>
-                <th scope="col">Address</th>
+@*                 <th scope="col">Email</th>
+ *@                <th scope="col">Address</th>
                 <th scope="col" class="text-center">Actions</th>
             </tr>
         </thead>
@@ -42,8 +42,8 @@
                     <tr>
                         <td scope="row">@supplier.SupplierName</td>
                         <td>@supplier.SupplierPhone</td>
-                        <td>@supplier.SupplierEmail</td>
-                        <td>@supplier.SupplierAddress</td>
+@*                         <td>@supplier.SupplierEmail</td>
+ *@                        <td>@supplier.SupplierAddress</td>
                         <td class="text-center">
                             @if (User.IsInRole(RolesNames.roleAdmin))
                             {
