@@ -110,11 +110,16 @@ namespace Inventory_database.Migrations
                     b.Property<int>("productQuantity")
                         .HasColumnType("int");
 
+                    b.Property<int?>("supplierId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("categoryId");
 
                     b.HasIndex("inventoryId");
+
+                    b.HasIndex("supplierId");
 
                     b.ToTable("Products");
                 });
@@ -184,29 +189,29 @@ namespace Inventory_database.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "603d9b0d-99a1-4d1f-b413-a1928c5f902d",
-                            ConcurrencyStamp = "e4c65261-2b6b-4124-a2d6-bc6b2c3e1c6f",
+                            Id = "e9288f87-9f0c-4a3a-9a14-86945ad26072",
+                            ConcurrencyStamp = "b87f72d7-f24f-43e1-bc5e-7ab6c3402030",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "37dbd136-f66c-4128-8d76-908c4939a563",
-                            ConcurrencyStamp = "1f938e78-9d44-461d-a29b-dfa6c399d6a0",
+                            Id = "0843476e-02db-45e5-a6f6-3da02ac99d1d",
+                            ConcurrencyStamp = "dae07681-12b5-4abc-9d51-bf88333b5661",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = "feaf003a-c0b4-4ce5-9a3f-a984972c2260",
-                            ConcurrencyStamp = "6c6b4bed-b41c-4344-ae2b-8f82b426ff24",
+                            Id = "dc0c87c6-356d-4860-b55d-1dffac5fab2b",
+                            ConcurrencyStamp = "ab6ea5d3-e564-4788-82c0-f072cbc10600",
                             Name = "Viewer",
                             NormalizedName = "viewer"
                         },
                         new
                         {
-                            Id = "c2355f87-904a-4f9c-889f-1e6bec1bb535",
-                            ConcurrencyStamp = "1244c7aa-82e6-41a7-8253-793022b2d135",
+                            Id = "f9cccb32-44df-4af0-9a87-08f203ef2a2f",
+                            ConcurrencyStamp = "2b6fd650-a42a-4f91-875f-c38f0878c514",
                             Name = "Supplier",
                             NormalizedName = "supplier"
                         });
@@ -397,9 +402,15 @@ namespace Inventory_database.Migrations
                         .WithMany("Products")
                         .HasForeignKey("inventoryId");
 
+                    b.HasOne("Inventory_Entities.Supplier", "supplier")
+                        .WithMany("Products")
+                        .HasForeignKey("supplierId");
+
                     b.Navigation("category");
 
                     b.Navigation("inventory");
+
+                    b.Navigation("supplier");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -459,6 +470,11 @@ namespace Inventory_database.Migrations
                 });
 
             modelBuilder.Entity("Inventory_Entities.Inventory", b =>
+                {
+                    b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("Inventory_Entities.Supplier", b =>
                 {
                     b.Navigation("Products");
                 });

@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\omara\\Desktop\\Inventory_GitHub\\Inventory_Project\\Inventory\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6A674DD2-4A64-4FA0-8764-539171A7E4EC}|Inventory.csproj|c:\\users\\omara\\desktop\\inventory_github\\inventory_project\\inventory\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6A674DD2-4A64-4FA0-8764-539171A7E4EC}|Inventory.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6A674DD2-4A64-4FA0-8764-539171A7E4EC}|Inventory.csproj|c:\\users\\omara\\desktop\\inventory_github\\inventory_project\\inventory\\views\\inventory\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A674DD2-4A64-4FA0-8764-539171A7E4EC}|Inventory.csproj|solutionrelative:views\\inventory\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A674DD2-4A64-4FA0-8764-539171A7E4EC}|Inventory.csproj|c:\\users\\omara\\desktop\\inventory_github\\inventory_project\\inventory\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6A674DD2-4A64-4FA0-8764-539171A7E4EC}|Inventory.csproj|solutionrelative:views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6A674DD2-4A64-4FA0-8764-539171A7E4EC}|Inventory.csproj|c:\\users\\omara\\desktop\\inventory_github\\inventory_project\\inventory\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A674DD2-4A64-4FA0-8764-539171A7E4EC}|Inventory.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -31,27 +31,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\omara\\Desktop\\Inventory_GitHub\\Inventory_Project\\Inventory\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\omara\\Desktop\\Inventory_GitHub\\Inventory_Project\\Inventory\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAADYAAABwAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\omara\\Desktop\\Inventory_GitHub\\Inventory_Project\\Inventory\\Views\\Inventory\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Inventory\\Index.cshtml",
+              "ToolTip": "C:\\Users\\omara\\Desktop\\Inventory_GitHub\\Inventory_Project\\Inventory\\Views\\Inventory\\Index.cshtml*",
+              "RelativeToolTip": "Views\\Inventory\\Index.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-18T23:29:32.578Z",
+              "WhenOpened": "2024-10-19T16:26:03.194Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\omara\\Desktop\\Inventory_GitHub\\Inventory_Project\\Inventory\\Views\\Product\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Product\\Create.cshtml",
-              "ToolTip": "C:\\Users\\omara\\Desktop\\Inventory_GitHub\\Inventory_Project\\Inventory\\Views\\Product\\Create.cshtml",
-              "RelativeToolTip": "Views\\Product\\Create.cshtml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACgAAABkAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\omara\\Desktop\\Inventory_GitHub\\Inventory_Project\\Inventory\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\omara\\Desktop\\Inventory_GitHub\\Inventory_Project\\Inventory\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-18T23:19:56.395Z",
+              "WhenOpened": "2024-10-19T16:19:44.274Z",
               "EditorCaption": ""
             }
           ]

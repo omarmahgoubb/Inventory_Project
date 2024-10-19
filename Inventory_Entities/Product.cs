@@ -68,5 +68,11 @@ namespace Inventory_Entities
         public int? inventoryId { get; set; }
 
         public Inventory? inventory { get; set; }
+
+        [DisplayName("Supplier")]
+        [ForeignKey("Supplier")]
+        public int? supplierId { get; set; }
+
+        public Supplier? supplier { get; set; }
     }
 }

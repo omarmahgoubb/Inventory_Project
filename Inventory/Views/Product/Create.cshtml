@@ -35,6 +35,11 @@
             <label asp-for="inventoryId" class="form-label">Inventory</label>
             <select asp-for="inventoryId" class="form-control" asp-items="@ViewBag.inventoryList" required></select>
         </div>
+
+        <div class="mb-3">
+            <label asp-for="supplierId"class="form-label">Supplier</label>
+            <select asp-for="supplierId" class="form-control" asp-items="@ViewBag.supplierList" required></select>
+            </div>
         <div class="mb-3">
             <label class="form-label">Product Image</label>
             <input type="file" asp-for="clientFile" class="form-control" onchange="loadFile(event)" />

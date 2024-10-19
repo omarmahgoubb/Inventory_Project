@@ -21,12 +21,12 @@ namespace Inventory_Self.Controllers
         public async Task<IActionResult> Index()
         {
             // Include both category and inventory in one query
-            var productList = await unitOfWork.products.FindAllAsync("category", "inventory");
+            var productList = await unitOfWork.products.FindAllAsync("category", "inventory","supplier");
             var lowQuantityProducts = productList.Where(p => p.productQuantity < 5).ToList();
             if (lowQuantityProducts.Any())
             {
                 string productNames = string.Join(", ", lowQuantityProducts.Select(p => p.productName));
-                TempData["errorData"] = productNames + " have low quantity!";
+                TempData["errorData"] = "LOW QUANTITY : " +productNames ;
             }
             return View(productList);
         }
@@ -37,6 +37,7 @@ namespace Inventory_Self.Controllers
         {
             await createSelectInventoryListAsync(); // Add this line
             await createSelectCategoryListAsync();
+            await createSelectSupplierListAsync();
             return View();
         }
 
@@ -82,6 +83,7 @@ namespace Inventory_Self.Controllers
             }
             await createSelectInventoryListAsync();
             await createSelectCategoryListAsync();
+            await createSelectSupplierListAsync();
             return View(product);
         }
         //get
@@ -91,6 +93,8 @@ namespace Inventory_Self.Controllers
             var product = await unitOfWork.products.FindByIdAsync(id);
             await createSelectInventoryListAsync(); // Add this line
             await createSelectCategoryListAsync();
+            await createSelectSupplierListAsync();
+
             return View(product);
         }
 
@@ -132,6 +136,7 @@ namespace Inventory_Self.Controllers
             }
             await createSelectInventoryListAsync();
             await createSelectCategoryListAsync();
+            await createSelectSupplierListAsync();
 
             return View(product);
         }
@@ -159,6 +164,13 @@ namespace Inventory_Self.Controllers
             var inventories = await unitOfWork.inventories.FindAllAsync();
             SelectList listItems = new SelectList(inventories, "Id", "InventoryName", selectId);
             ViewBag.inventoryList = listItems;
+        }
+
+        private async Task createSelectSupplierListAsync(int selectId = 1)
+        {
+            var suppliers = await unitOfWork.suppliers.FindAllAsync();
+            SelectList listItems = new SelectList(suppliers, "Id", "SupplierName", selectId);
+            ViewBag.supplierList = listItems;
         }
 
     }

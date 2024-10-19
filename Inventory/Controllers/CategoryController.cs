@@ -102,7 +102,7 @@ namespace Inventory_Self.Controllers
         {
             var category = await unitOfWork.categories.FindByIdAsync(id);
             unitOfWork.categories.Delete(category);
-            TempData["successData"] = category.categoryName + " has been deleted successfully";
+            TempData["errorData"] = category.categoryName + " has been deleted successfully";
             return RedirectToAction("Index");
         }
     }

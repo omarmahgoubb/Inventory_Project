@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Inventory_Entities
 {
@@ -23,6 +24,9 @@ namespace Inventory_Entities
 
         [StringLength(50, ErrorMessage = "City cannot exceed 50 characters.")]
         public string City { get; set; } // New property for city
+
+        public ICollection<Product>? Products { get; set; } // Updated to follow naming conventions
+
 
     }
 }
