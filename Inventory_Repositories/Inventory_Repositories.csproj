@@ -7,6 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.104.1" />
+    <PackageReference Include="EPPlus" Version="7.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Inventory_database\Inventory_database.csproj" />
     <ProjectReference Include="..\Inventory_Entities\Inventory_Entities.csproj" />
   </ItemGroup>

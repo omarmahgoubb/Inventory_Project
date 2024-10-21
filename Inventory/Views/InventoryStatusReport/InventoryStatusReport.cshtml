@@ -14,12 +14,13 @@
     </div>
     <div class="text-center">
         <button type="submit" class="btn btn-primary">Generate Report</button>
+        <button type="button" class="btn btn-info ms-2" onclick="location.href='@Url.Action("ExportToExcel", new { startDate = ViewData["StartDate"], endDate = ViewData["EndDate"] })'">Export to Excel</button>
     </div>
+
 </form>
 
-
 <div class="container mt-4">
-    <table class="table table-hover table-striped">
+    <table class="table table-hover table-striped" id="reportTable">
         <thead class="table-dark">
             <tr class="table-primary">
                 <th class="text-center" scope="col">Product Name</th>
