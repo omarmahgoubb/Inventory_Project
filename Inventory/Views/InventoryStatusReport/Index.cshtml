@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Inventory Status Report";
+}
+
+<h2 class="mt-4">Report</h2>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12">
+            <form method="get" asp-action="InventoryStatusReport">
+                <div class="form-group mb-3">
+                    <label for="startDate" class="form-label">Start Date</label>
+                    <input type="date" id="startDate" name="startDate" class="form-control" />
+                </div>
+                <div class="form-group mb-3">
+                    <label for="endDate" class="form-label">End Date</label>
+                    <input type="date" id="endDate" name="endDate" class="form-control" />
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Generate Report</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

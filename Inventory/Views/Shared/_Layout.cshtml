@@ -60,33 +60,38 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <!-- You can uncomment this section if you want to keep the navigation links -->
                     <ul class="navbar-nav flex-grow-1">
-                        
 
-                    @if (signInManager.IsSignedIn(User))
-                    {
-                    <li class="nav-item">
-                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index" style="color: white;">Home</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" asp-area="" asp-controller="Product" asp-action="Index" style="color: white;">Products</a>
-                    </li>
-                    <li class="nav-item">
+
+                        @if (signInManager.IsSignedIn(User))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index" style="color: white;">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Product" asp-action="Index" style="color: white;">Products</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" asp-area="" asp-controller="Category" asp-action="Index" style="color: white;">Categories</a>
-                    </li>
-                    <li class="nav-item">
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" asp-area="" asp-controller="Inventory" asp-action="Index" style="color: white;">Inventories</a>
-                    </li>
-                     <li class="nav-item">
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" asp-area="" asp-controller="Supplier" asp-action="Index" style="color: white;">Suppliers</a>
-                    </li>
-                    @if (User.IsInRole(RolesNames.roleAdmin))
-                    {
-                    <li class="nav-item">
+                            </li>
+                            
+                            @if (User.IsInRole(RolesNames.roleAdmin))
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="InventoryStatusReport" asp-action="Index" style="color: white;">Report</a>
+                                </li>
+                                <li class="nav-item">
                                     <a class="nav-link" asp-area="" asp-controller="Roles" asp-action="Index" style="color: white;">User Roles</a>
-                    </li>
-                    }
-                    }
-                    </ul>
+                                </li>
+                            }
+                        }
+
+
     
 
                     <div class="ms-auto">
